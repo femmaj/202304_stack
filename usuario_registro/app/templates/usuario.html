@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block titulo %}Bienvenidos al Sistema{% endblock %}
+
+{% block contenido %}
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <a class="btn btn-outline-success btn-sm my-3" href="/salir">Salir</a>
+</div>
+
+<h3>Bienvenid@, {{session.usuario.nombre}}</h3>
+
+{% endblock %}
